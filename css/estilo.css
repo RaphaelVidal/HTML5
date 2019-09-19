@@ -1,0 +1,17 @@
+body{						/*padrão para tags*/
+	background-color:;
+	background-image:url(../imagens/tela.jpg);
+}
+
+td{
+	text-align:center;
+	
+}
+
+#corpo_inicial{						/*padrão para id*/
+	background-color:;
+}
+
+.corpo_class{						/*padrão para classe*/
+	background-color:;
+}

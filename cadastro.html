@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Html5</title>
+	<link rel="shortcut icon" type="image/x-icon" href="imagens/logo.ico">
+	</head>
+
+	<body> <!--bgcolor="#FF00FF" background="imagens/plano.jpg"-->
+	<nav id="menu">
+		<table width="97%" align="center" border="1" style="padding:10px">
+			<tr><td><a href="index.html">Home</a></td>
+				<td><a href="fotos.html">Fotos</a></td>
+				<td><a href="videos.html">vídeos</a></td>
+				<td><a href="musicas.html">Músicas</a></td>
+				<td><a href="listas.html">Listas</a></td>
+				<td><a href="links.html">Links</a></td>
+				<td><a href="tabela.html">Tabela</a></td>
+				<td><a href="cadastro.html">Cadastro</a></td>
+			</tr>
+		</table>
+	</nav>	
+	  
+</br></br>
+	  <!-- Formulário-->
+		 <h2>Formulário Sem Tabela</h2>
+		 <form name="formulario" id="formulario_cadastro" action="dados.php" method="get">
+			<label>Nome</label> <input type="text" name="nome" size="40" maxlength="150" /><br />
+			<label>CPF</label> <input type="text" name="cpf" size="20" maxlength="14" /><br />
+			<label>Filhos</label> <input type="number" name="filhos" size="20" step="1" min="0" max="50"/><br />
+			<label>Telefone</label> <input type="tel" name="telefone" size="20" maxlength="20" /><br />
+			<label>E-mail</label> <input type="email" name="email" size="40" maxlength="150" /><br />
+			<label>Senha</label> <input type="password" name="psw"><br />
+			Sexo 
+			<input type="radio" id="sexoM" name="sexo" value="M" /> <label for="sexoM">Masculino</label>
+			<input type="radio" id="sexoF" name="sexo" value="F" /> <label for="sexoF">Feminino</label>
+		
+			<label>Estado</label><select name="estado" id="estado">
+				<option value="AC">Acre</option>
+				<option value="AL">Alagoas</option>
+				<option value="AM">Amazonas</option>
+				<option value="AP">Amapá</option>
+			</select>
+		
+			<input type="submit" name="enviar" value="Salvar" />
+		
+		  </form>
+		  
+		 <!-- Formulário--> 
+		   <h2>Formulário Com Tabela</h2>
+		 <form name="formulario" id="formulario_cadastro" action="dados.php" method="post">
+		 <table align="left">
+			<tr><td><label>Nome</label></td><td><input type="text" name="nome" size="40" maxlength="150" /></td></tr>
+			<tr><td><label>CPF</label></td><td> <input type="text" name="cpf" size="40" maxlength="14" /></td></tr>
+			<tr><td><label>Filhos</label></td><td> <input type="number" name="filhos" size="40" step="1" min="0" max="50"/></td></tr>
+			<tr><td><label>Telefone</label></td><td> <input type="tel" name="telefone" size="40" maxlength="20" /></td></tr>
+			<tr><td><label>E-mail</label></td><td> <input type="email" name="email" size="40" maxlength="150" /></td></tr>
+			<tr><td><label>Senha</label></td><td> <input type="password" name="psw"></td></tr>
+			<tr><td>Sexo</td><td>
+			<input type="radio" id="sexoM" name="sexo" value="M" /> <label for="sexoM">Masculino</label>
+			<input type="radio" id="sexoF" name="sexo" value="F" /> <label for="sexoF">Feminino</label></td></tr>
+		
+			<tr><td><label>Estado</label></td><td>
+				<select name="estado" id="estado">
+					<option value="AC">Acre</option>
+					<option value="AL">Alagoas</option>
+					<option value="AM">Amazonas</option>
+					<option value="AP">Amapá</option>
+				</select></td></tr>
+			<tr><td></br></td></tr>
+			<tr><td colspan="2"><input type="submit" name="enviar" value="Salvar" /></td></tr>
+		</table>
+		  </form>
+	 
+			
+	</body>
+
+</html>
